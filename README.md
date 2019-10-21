@@ -1,2 +1,2 @@
-# plg_users_autoassignusergroup
+# plg_user_autoassignusergroup
 Auto assign user group
