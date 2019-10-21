@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.0" type="plugin" group="user" method="upgrade">
+	<name>PLG_AUTO_ASSIGN_USER_GROUP_NAME</name>
+	<author>Techjoomla</author>
+	<creationDate>28th June 2019</creationDate>
+	<copyright>Copyright (C) 2016 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_AUTO_ASSIGN_USER_GROUP_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="autoassignusergroup">autoassignusergroup.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+			<language tag="en-GB">en-GB/en-GB.plg_user_autoassignusergroup.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_user_autoassignusergroup.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="domainUsergroupMap"
+					type="subform"
+					label="PLG_AUTO_ASSIGN_USER_GROUP_MAP"
+					description="PLG_AUTO_ASSIGN_USER_GROUP_MAP_DESC"
+					multiple="true">
+					<form>
+						<fields>
+							<fieldset>
+								<field
+									name="domain"
+									type="text"
+									label="PLG_AUTO_ASSIGN_USER_GROUP_FIELD_DOMAIN_LABEL"
+									description="PLG_AUTO_ASSIGN_USER_GROUP_FIELD_DOMAIN_DESC"
+									required="true"
+								/>
+								<field
+									name="groups"
+									type="usergroup"
+									label="PLG_AUTO_ASSIGN_USER_GROUP_FIELD_GROUP_LABEL"
+									description="PLG_AUTO_ASSIGN_USER_GROUP_FIELD_GROUP_DESC"
+									multiple="true"
+									required="true"
+								/>
+							</fieldset>
+						</fields>
+					</form>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
